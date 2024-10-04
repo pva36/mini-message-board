@@ -1,5 +1,4 @@
 const express = require("express");
-const messages = require("../models/messages");
 const newController = require("../controllers/newController");
 
 const newRouter = express.Router();

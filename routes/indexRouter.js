@@ -1,5 +1,4 @@
 const express = require("express");
-const messages = require("../models/messages");
 const db = require("../db/queries");
 const indexController = require("../controllers/indexController");
 
