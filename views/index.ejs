@@ -10,14 +10,14 @@
     <body>
         <% messages.forEach((message) => { %>
         <ul>
-            <li><strong>user: </strong><%= message.user %></li>
+            <li><strong>user: </strong><%= message.username %></li>
             <li>
                 <strong>message:</strong>
-                <p><%= message.text %></p>
+                <p><%= message.message %></p>
             </li>
-            <li>added on <%= message.added %></li>
+            <li>added on <%= message.date %></li>
         </ul>
-        <input type="button" id="<%= messages.indexOf(message) %>" value="message details">
+        <input type="button" id="<%= message.id %>" value="message details">
         <% }) %>
         <script src="./js/index.js"></script>
     </body>
